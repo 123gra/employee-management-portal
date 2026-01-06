@@ -65,3 +65,47 @@ This works both locally and in Codespaces.
    npm install
    npm run dev
 
+## API Documentation
+
+Base URL:
+- Local: http://localhost:5000
+- Codespaces: https://<codespace>-5000.app.github.dev
+
+### Authentication
+
+#### POST /login
+Authenticates the user and returns a JWT token.
+
+Request body:
+```json
+{
+  "email": "admin@test.com",
+  "password": "admin123"
+}
+Response:
+{
+  "token": "<jwt-token>"
+}
+Employees (Protected Routes)
+All employee routes require the Authorization header:
+
+Authorization: Bearer <jwt-token>
+
+GET /employees
+Returns a list of all employees.
+
+POST /employees
+Creates a new employee.
+
+Request body:
+{
+  "name": "John Doe",
+  "role": "Developer",
+  "department": "Engineering"
+}
+
+PUT /employees/:id
+Updates an existing employee.
+
+DELETE /employees/:id
+Deletes an employee.
