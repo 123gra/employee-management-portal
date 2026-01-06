@@ -63,24 +63,29 @@ Base URL:
 #### POST /login
 Authenticates the user and returns a JWT token.
 
+
 Request body:
 {
   "email": "admin@test.com",
   "password": "admin123"
 }
+
 Response:
 {
   "token": "<jwt-token>"
 }
+
 Employees (Protected Routes)
 All employee routes require the Authorization header:
 
 Authorization: Bearer <jwt-token>
 
 GET /employees
+
 Returns a list of all employees.
 
 POST /employees
+
 Creates a new employee.
 
 Request body:
@@ -91,9 +96,11 @@ Request body:
 }
 
 PUT /employees/:id
+
 Updates an existing employee.
 
 DELETE /employees/:id
+
 Deletes an employee.
 
 ## Running Locally
