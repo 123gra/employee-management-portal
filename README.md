@@ -52,19 +52,6 @@ JWT_SECRET=secret123
 
 This works both locally and in Codespaces.
 
-## Running Locally
-1. Start backend
-   ```bash
-   cd backend
-   npm install
-   npm run dev
-   
-2. Start frontend
- ```bash
-   cd backend
-   npm install
-   npm run dev
-
 ## API Documentation
 
 Base URL:
@@ -109,3 +96,17 @@ Updates an existing employee.
 
 DELETE /employees/:id
 Deletes an employee.
+
+## Running Locally
+1. Start backend
+   ```bash
+   cd backend
+   npm install
+   npm run dev
+   
+2. Start frontend
+ ```bash
+   cd backend
+   npm install
+   npm run dev
+
