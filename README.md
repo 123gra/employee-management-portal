@@ -64,7 +64,6 @@ Base URL:
 Authenticates the user and returns a JWT token.
 
 Request body:
-```json
 {
   "email": "admin@test.com",
   "password": "admin123"
